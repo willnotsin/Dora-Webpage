@@ -1,0 +1,482 @@
+*{
+    box-sizing: border-box;
+    /* border: 2px solid palevioletred; */
+    font-family: system-ui, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0;
+    margin: 0%;
+}
+body,html{
+    background-color: color;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+header{
+    display: flex;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    background-color: aliceblue;
+    z-index: 100;
+}
+.logo{
+    /* background-color: gold; */
+    width: 20%;
+    padding: 20px 10px;
+    margin-right: 5%;
+    
+}
+.logo img{
+    width: 100%;
+    max-height: 43px
+}
+.nav{
+    /* background-color: forestgreen; */
+    position: absolute;
+    right: 0;
+    padding: 20px 10px;
+    margin-right: 2%
+    
+}
+#navlist{
+    display: flex;
+    list-style: none;
+    padding: 5px;
+    justify-content: space-around;
+    /* background-color: white; */
+    
+}
+#navlist a{
+    text-decoration: none;
+    padding: 1em;
+    color: black;
+    font-size: large;
+    font-weight: bolder;
+
+}
+.welcome-section{
+    margin-top: calc(5% + 3em);
+    background-color: #053469;
+    color: white;
+    display: flex;
+}
+.centering{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    align-items: center;
+}
+.welcome-section > div{
+    height: 100vh;
+    max-width: 1000px;
+}
+.welcome-section h1{
+    font-size: 60px;
+}
+.welcome-par p{
+    color: floralwhite;
+    font-size: 22px;
+    margin-bottom: 0px;
+    margin-top: 0;
+}
+.shape{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+.triangle{
+    border-top: 40px solid #053469;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+}
+.announcement{
+    height: 55vh;
+    max-width: 1000px;
+}
+.container h1{
+    margin-bottom: 3px;
+    font-size: 54px;
+    color: darkgray;
+}
+.container p{
+    font-size: 22px;
+    color: slategray;
+}
+.webinar-section{
+    display: flex;
+    flex-direction: column;
+    background-color: firebrick;
+    padding: 2em;
+}
+.webinar-info{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    padding: 2em;
+}
+.webinar-img{
+    width: 50%;
+}
+.webinar-img:hover{
+    border:10px solid whitesmoke;
+    transition: 0.2s;
+}
+.webinar-text{
+    width: 50%;
+    color: white;
+}
+.webinar-text h1{
+    font-size: 25px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.webinar-text h1 strong{
+    font-size: 30px;
+    color: navy;
+}
+.webinar-text h3{
+    font-size: 24px;
+}
+.webinar-text h3 strong{
+    font-size: 27px;
+    color:navy;
+}
+.webinar-text p{
+    font-size: 20px;
+    text-justify: inter-word;
+    margin-top: 20px;
+}
+.webinar-text button{
+    font-size: 18px;
+    background-color: steelblue;
+    padding: 20px 40px;
+    color: inherit;
+    font-weight: bolder;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.webinar-text button:hover{
+    background-color: navy;
+    transition: 0.5s;
+}
+#webinar-form{
+    max-width: 1000px;
+    padding: 3em;
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.651);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+    color: white;
+}
+#webinar-form h2{
+    margin-bottom: 0;
+    font-size: 18px;
+}
+#webinar-form p{
+    margin-top: 0;
+}
+.form1, .form2{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    margin-bottom: 10px;
+}
+form .input{
+    position: relative;
+    width: 100%;
+}
+form label{
+    display: inline-block;
+    margin-bottom: 3px;
+    margin-left: 0;
+    font-size: 12px;
+}
+form input, form select{
+    padding: 0.5em;
+    display: block;
+    width: 100%;
+    font-size: 15px;
+    font: inherit;
+    background-color: ghostwhite;
+    border-radius: 5px;
+    border: none;
+}
+form input:focus, form select:focus{
+    outline: none;
+}
+#register-btn{
+    margin-top: 20px;
+}
+form button{
+    font-size: 18px;
+    background-color: #4682b4;
+    padding: 10px 40px;
+    color: inherit;
+    font-weight: bolder;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+}
+form button:hover{
+    padding: 7px 35px;
+    transition: 0.3s;
+    font-size: 12px;
+    background-color: navy;
+}
+.spacing{
+    width: 50%;
+}
+.divider{
+    margin: 2em 0 ;
+    width: 100%;
+    border-top: 5px solid seashell;
+}
+#webinar-outline{
+    min-width: 1000px;
+    padding: 1em 0;
+    color: whitesmoke;
+}
+#webinar-outline h1{
+    font: monospace;
+    font-size: 45px;
+    margin-top: 0;
+}
+#outline-container{
+    display: flex;
+    gap: 1em;
+    padding: 1em 0;
+    width: 100%;
+}
+.circle{
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    background-color: seashell;
+    margin: 2em auto
+}
+#webinar-outline h2{
+    font-size: 22px;
+}
+.webinar-section p{
+    text-align: center;
+    font-weight: bold;
+    color: whitesmoke;
+    margin-bottom: 0;
+}
+.shape2{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    background-color: #2A4365;
+}
+.triangle2{
+    border-top: 40px solid firebrick;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+}
+.vacancy-section{
+    height:100vh;
+    background-color:#2A4365;
+    color: snow;
+}
+.vacancy-section > h1{
+    margin-top: -2em;
+    margin-bottom: 2em;
+    font-size: 47px;
+}
+#industries-container{
+    display: flex;
+    width:100%;
+    gap: 1em;
+}
+.industry{
+    width: calc(100%/5);
+    padding: 1em;
+}
+
+.art-container{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    padding: 1em;
+    margin: 2em 0;
+    max-width: 1200px;
+    height: 66vh;
+}
+.art-text{
+    width: 50%;
+}
+.art-text h1{
+    font-size: 35px;
+}
+.art-text h1 strong{
+    color:firebrick;
+}
+.art-img{
+    width: 90%;
+}
+.art-img img{
+    width: 100%;
+}
+.requirement-section{
+    background-color: #053469;
+    height: 100vh;
+}
+.requirement-section > div {
+    max-width: 1300px;
+    color: floralwhite;
+    margin: 0;
+}
+#requirement-text h1{
+    font-size: 30px;
+    padding: 1em;
+}
+#requirement-text p{
+    font-size: 24px;
+}
+#requirement-text  p:first-of-type{
+    margin-top: 1em;
+}
+#requirement-stuff{
+    display: flex;
+    width: 100%;
+}
+.requirements{
+    width: calc(100%/4);
+    margin: 2em;
+}
+.requirements .icon{
+    width:7em;
+    height: 6em;
+    border-radius: 10px;
+    margin: 1em auto;
+}
+.requirements span{
+    width: 5rem;
+    align-items: center;
+    margin: 1em auto;
+}
+.icon-color1{
+    background-color: lime;
+    border-color: lime;
+}
+.icon-color2{
+    background-color: gold;
+    border-color: gold;
+}
+.icon-color3{
+    background-color: firebrick;
+    border-color: firebrick;
+}
+.icon-color4{
+    background-color: skyblue;
+    border-color: skyblue;
+}
+.requirements h2{
+    font-size: 28px;
+}
+.requirements p{
+    font-size: 22px;
+    padding: 1em;
+}
+.salary-section{
+    background-color: aliceblue;
+    /* height: 100vh; */
+}
+.salary-section > div{
+    min-width: 1300px;
+    
+}
+.salary-section h1{
+    font-size: 40px;
+    color: rgba(0, 0, 0, 0.733);
+    margin-bottom: 0.5em;
+    margin-top: 1em;
+}
+.salary-section p:first-of-type{
+    font-size: 22px;
+    margin-bottom: 1em;
+    color:rgba(0, 0, 0, 0.651)
+}
+.salary-section .spacing{
+    height: 30px;
+    
+}
+#salary-grid{
+    display: grid;
+    grid-template-areas:
+    "a b"
+    "c d";
+    gap: 0;
+    color: white;
+    width: 100%;
+}
+#salary-grid h2{
+    padding: 1em;
+}
+#salary-grid p{
+    color: white;
+    font-size: 20px;
+}
+#salary-grid p:last-child{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+.salary-grids1{
+    grid-area: a;
+    background-color: #4682b4;
+    padding: 2em;
+}
+.salary-grids2{
+    grid-area: b;
+    background-color: darkturquoise;
+    padding: 2em;
+}
+.salary-grids3{
+    grid-area: c;
+    background-color: silver;
+    padding: 2em;
+}
+.salary-grids4{
+    grid-area: d;
+    background-color: rgba(0, 0, 0, 0.651);
+    padding: 2em;
+}
+.salary-img img:hover{
+    padding: 1em;
+    width: 20%;
+    transition: 0.5s;
+}
+.floating{
+    width: 60px;
+    height:70px;
+    align-items: center;
+    justify-content: center;
+    /* padding: 10px; */
+    display: block;
+    position: fixed;
+    bottom: 2em;
+    left: 1em;
+    background-color: whitesmoke;
+    z-index: 1000;
+    
+}
+footer{
+    position: relative;
+    bottom: 0;
+    background-color: aliceblue;
+    margin-top: 3em;
+    width: 100%;
+    display: flex;
+    padding-left: calc(2em + 60px);
+    padding-top: 1em;
+}
